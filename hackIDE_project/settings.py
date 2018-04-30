@@ -20,13 +20,13 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/1.9/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = '+h*i@$52+w(_e#etvzgnkjq!q0ajz1qpgs-y9%89x4w3nlct=m'
+SECRET_KEY = '215ded156955b30f191c81b0b8a55e4cf5d182c1'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = (os.environ.get('HACKIDE_DEBUG') != None)
 # DEBUG = (os.environ.get('HACKIDE_DEBUG') or "").lower() == "true"
 
-ALLOWED_HOSTS = ['hackide.herokuapp.com'] if not DEBUG else ['*']
+ALLOWED_HOSTS = ['codeide.herokuapp.com'] if not DEBUG else ['*']
 
 # To allow the cross site request over the app
 CORS_ORIGIN_ALLOW_ALL = True
